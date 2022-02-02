@@ -1,0 +1,23 @@
+*{
+    margin: 0.2%;
+    padding: 0;
+}
+.mainBT {
+    padding: 50px 0; 
+    margin: 50px 0;
+}
+.headText {
+    padding: 15px 0; 
+    font-size: 50px;
+    text-align: center;
+    margin: auto;
+}
+.maintext {
+    font-size: 20px;
+    font-weight: 40px
+}
+.mainBlock {
+    margin: 10px 0 0 0; 
+    padding: 20px; 
+    border-radius: 10px;
+}
