@@ -12,17 +12,17 @@ const buttons = [B1,B2,B3,
                 B4,B5,B6,
                 B7,B8,B9]
 
-const listic = ["./tree.html", "./paper.html", "./energy.html",
-                "./animals.html","./area.html","./factories.html",
-                "./ffish.html","./toxiRain.html","./sea.html"]
+listic = ["./tree.html", "./paper.html", "./energy.html",
+"./animals.html","./area.html","./factories.html",
+"./ffish.html","./toxiRain.html","./sea.html"]
 
-function Random (){ 
-    const max = 8;
-    return Math.round(Math.random() * max );
+document.addEventListener('click', function(event){
+    element = event.target;
+    if (element.classList.contains("mainBT")){
+        window.open(shuffle(listic));
+    }
+})
+
+function shuffle(array) { 
+    return array[Math.floor(Math.random() * array.length)];
 }
-
-function transation() {
-    location.href = listic[Random()];
-}
-
-buttons.forEach(el => el.addEventListener("click", transation))
