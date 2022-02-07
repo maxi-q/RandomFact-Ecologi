@@ -3,12 +3,11 @@ window.onload = function() {
 }
 
 function disable() {
-    BTdisabled.getCLSButtons().forEach(el => {
-        document.getElementById(el).disabled = true;
-    });
-    BTdisabled.getOPNEButtons().forEach(el => {
-        document.getElementById(el).disabled = false;
+    const values = Object.entries (BTdisabled.ButtonsDisabled)
+
+    values.forEach(el => {
+         document.getElementById(el[0]).disabled = el[1];
     });
 
-    console.log(BTdisabled.Closebuttons);
+    console.log(values);
 }

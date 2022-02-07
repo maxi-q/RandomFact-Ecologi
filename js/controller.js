@@ -1,17 +1,24 @@
 const BTdisabled = {
     User: "Max",
-    Closebuttons:["energy",
-    "animals","area","factories",
-    "ffish","tree","sea","trash"],
-    Openbuttons:["paper"],
-
-    getCLSButtons: function(){
-        return this.Closebuttons;},
-    getOPNEButtons: function(){
-        return this.Openbuttons;}
+    ButtonsDisabled: {
+        animals: true,
+        area: true,
+        energy: true,
+        factories: true,
+        ffish: false,
+        paper: true,
+        sea: false,
+        trash: true,
+        tree: true
+    },
+    GetButtons:  function(){
+        return ButtonsDisabled;
+    }
 }
 
 function OpenButton(button) {
-   
-    BTdisabled.Closebuttons.splice(0,1);
+    if(button in BTdisabled.ButtonsDisabled){
+        BTdisabled.ButtonsDisabled[button] = false;
+    }
+    
 }

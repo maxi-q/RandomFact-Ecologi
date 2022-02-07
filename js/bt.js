@@ -1,6 +1,6 @@
-listic = ["./paper.html", "./energy.html",
-"./animals.html","./area.html","./factories.html",
-"./ffish.html","./tree.html","./sea.html"]
+listic = ["paper", "energy",
+"animals","area","factories",
+"ffish","tree","sea"]
 
 document.addEventListener('click', function(event){
     element = event.target;
@@ -11,7 +11,7 @@ document.addEventListener('click', function(event){
         bt = shuffle(listic);
         OpenButton(bt);
         disable();
-        window.open(bt);
+        window.open("./" + bt + ".html");
     }
 })
 
