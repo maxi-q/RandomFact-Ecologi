@@ -17,6 +17,17 @@
       </style>
 </head>
 <body>
+    <div class="dropdown" style="float: right;">
+      <a class="btn btn-success dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+        Ссылка выпадающего списка
+      </a>
+    
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+        <li><a class="dropdown-item" href="#">Действие</a></li>
+        <li><a class="dropdown-item" href="#">Другое действие</a></li>
+        <li><a class="dropdown-item" href="#">Что-то еще здесь</a></li>
+      </ul>
+    </div>
 
     <div class="container">
       
@@ -27,34 +38,35 @@
           <div class="col">
             
             <div class="d-grid gap-2 col-6 mx-auto">
-                <button id="animals.html" class="btn btn-success mainBT" type="button">Животные</button>
-                <button id="area.html" class="btn btn-success mainBT" type="button">Воздух</button>
-                <button id="energy.html" class="btn btn-success mainBT" type="button">Энергия</button>
+                <button id="animals" class="btn btn-success mainBT" type="button">Животные</button>
+                <button id="area" class="btn btn-success mainBT" type="button">Воздух</button>
+                <button id="energy" class="btn btn-success mainBT" type="button">Энергия</button>
               </div>
 
           </div>
           <div class="col">
 
             <div class="d-grid gap-2 col-6 mx-auto">
-                <button id="factories.html" class="btn btn-success mainBT" type="button">Заводы</button>
-                <button id="ffish.html" class="btn btn-success mainBT" type="button">Рыбы</button>
-                <button id="paper.html" class="btn btn-success mainBT" type="button">Бумага</button>
+                <button id="factories" class="btn btn-success mainBT" type="button">Заводы</button>
+                <button id="ffish" class="btn btn-success mainBT" type="button">Рыбы</button>
+                <button id="paper" class="btn btn-success mainBT" type="button">Бумага</button>
               </div>
 
           </div>
           <div class="col">
 
             <div class="d-grid gap-2 col-6 mx-auto">
-                <button id="sea.html" class="btn btn-success mainBT" type="button">Океаны</button>
-                <button id="trash.html" class="btn btn-success mainBT" type="button">Мусор</button>
-                <button id="tree.html" class="btn btn-success mainBT" type="button">Деревья</button>
+                <button id="sea" class="btn btn-success mainBT" type="button">Океаны</button>
+                <button id="trash" class="btn btn-success mainBT" type="button">Мусор</button>
+                <button id="tree" class="btn btn-success mainBT" type="button">Деревья</button>
               </div>
 
           </div>
         </div>
       </div>
 
-    
+    <script src="./js/view.js"></script>
+    <script src="./js/controller.js"></script>
     <script src="./js/bt.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>

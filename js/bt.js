@@ -5,10 +5,13 @@ listic = ["./paper.html", "./energy.html",
 document.addEventListener('click', function(event){
     element = event.target;
     if (element.classList.contains("mainBT")){
-        window.open(element.id);
+        window.open(element.id + ".html");
     }
     else if (element.classList.contains("SuperBT")){
-        window.open(shuffle(listic));
+        bt = shuffle(listic);
+        OpenButton(bt);
+        disable();
+        window.open(bt);
     }
 })
 
