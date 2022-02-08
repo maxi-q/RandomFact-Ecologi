@@ -5,9 +5,9 @@ const BTdisabled = {
         area: true,
         energy: true,
         factories: true,
-        ffish: false,
+        ffish: true,
         paper: true,
-        sea: false,
+        sea: true,
         trash: true,
         tree: true
     },

@@ -5,6 +5,9 @@
 .mainBT {
     padding: 50px 0; 
     margin: 50px 0;
+    border-style: solid;
+    border-color:rgb(42, 100, 19);
+    border-radius: 5px;
 }
 .headText {
     padding: 15px 0; 

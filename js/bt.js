@@ -1,6 +1,6 @@
 listic = ["paper", "energy",
 "animals","area","factories",
-"ffish","tree","sea"]
+"ffish","tree","sea","trash"]
 
 document.addEventListener('click', function(event){
     element = event.target;
