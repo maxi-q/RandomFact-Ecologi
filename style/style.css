@@ -1,13 +1,15 @@
 *{
     margin: 0.2%;
     padding: 0;
+    
+}
+body {
+    font-family: Verdana, Helvetica, Arial, sans-serif;
 }
 .mainBT {
     padding: 50px 0; 
     margin: 50px 0;
-    border-style: solid;
-    border-color:rgb(42, 100, 19);
-    border-radius: 5px;
+    background-color:rgb(67, 151, 85);
 }
 .headText {
     padding: 15px 0; 
@@ -28,4 +30,17 @@
     width: 30%;
     margin: 30px 35%;
     height: 100px;
+}
+.btn-success {
+    color: rgb(189, 255, 198);
+    background-color: #066629;
+    border-color: #0c3001;
+}
+.btn-success.disabled, .btn-success:disabled {
+    color: rgb(255, 255, 255);
+    background-color: #366d4a;
+    border-color: #485c42;;
+}
+.btn {
+    font-weight: 500;
 }
