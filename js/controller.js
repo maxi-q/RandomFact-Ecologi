@@ -20,5 +20,4 @@ function OpenButton(button) {
     if(button in BTdisabled.ButtonsDisabled){
         BTdisabled.ButtonsDisabled[button] = false;
     }
-    httpPOST(button);
 }

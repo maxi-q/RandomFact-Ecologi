@@ -3,7 +3,7 @@ function httpPOST( Button)
     url = '1111';
     let xhr = new XMLHttpRequest();
     xhr.open("POST", url, true);
-    setRequestHeader("Content-Type", "application/json");
+    xhr.setRequestHeader("Content-Type", "application/json");
     var data = JSON.stringify({ "userName": userName.value, 
                                 "Button": Button.value
                             });
