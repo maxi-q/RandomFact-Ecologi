@@ -1,0 +1,24 @@
+.mainBox {
+    margin:100px auto;
+    height: 600px;
+    width: 400px;
+    border-radius: 20px;
+    background-color:rgb(158, 194, 158);
+}
+.reg-Logo {
+    padding-top: 20px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 28px;
+}
+.reg-text {
+    padding-bottom: 0px
+}
+.input-group {
+    width: 90%;
+    margin: 0 5%;
+}
+.Rbtn {
+    margin: 50% 10%;
+    width: 80%;
+}
