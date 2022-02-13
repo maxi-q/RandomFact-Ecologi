@@ -15,28 +15,29 @@
       
         <a href="./Enter.html"><p class="text-uppercase reg-Logo">Регистрация</p></a>
         <div class="input-group mb-3">
-            <input id="Rname" type="text" class="form-control" placeholder="Имя" maxlength="32" aria-label="Example text with button addon" aria-describedby="button-addon1">
+            <input id="Rname" data-rule="name" type="text" class="form-control" placeholder="Имя" maxlength="32" aria-label="Example text with button addon" aria-describedby="button-addon1" required>
           </div>
           
           <div class="input-group mb-3">
             
-            <input id="mail" type="text" class="form-control" placeholder="Эл.почта" maxlength="32" aria-label="Example text with button addon" aria-describedby="button-addon1">
+            <input data-rule="email" type="email"  class="form-control" placeholder="Эл.почта" maxlength="32" aria-label="Example text with button addon" aria-describedby="button-addon1">
           </div>
           
           <div class="input-group mb-3">
-                <input id="password" type="password" class="form-control" placeholder="Пароль"  maxlength="64" id="exampleInputPassword1"><span id="passwordHelpInline" class="form-text" style="margin-left: 1px;">
+                <input id="password" data-rule="password" type="password" class="form-control" placeholder="Пароль"  maxlength="64" id="exampleInputPassword1" required>
+                <span id="passwordHelpInline" class="form-text" style="margin-left: 1px;">
                     длинна: 8-64
                   </span>
           </div>
           
           <div class="input-group mb-3">
-            <input id="returnPassword" type="password" class="form-control" placeholder="Повторить пароль" maxlength="64" id="exampleInputPassword1">
+            <input id="returnPassword" data-rule="returnPassword" type="password" class="form-control" placeholder="Повторить пароль" maxlength="64" id="exampleInputPassword1" required>
           </div>
 
           <button type="button" id="register" class="btn btn-success Rbtn">Регистрация</button>
     </div>
     
-      <script src=".\js\registration\regBtn.js"></script>
+      <script src=".\js\registration\Register.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
